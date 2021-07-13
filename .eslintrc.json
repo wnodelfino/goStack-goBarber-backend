@@ -46,7 +46,8 @@
     "class-methods-use-this": "off",
     "camelcase":"off",
     "no-use-before-define": "off",
-    "no-console":"off"
+    "no-console":"off",
+    "no-useless-constructor": "off"
   },
   "settings": {
     "import/resolver": {
