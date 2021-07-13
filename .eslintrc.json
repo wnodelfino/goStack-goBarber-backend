@@ -18,11 +18,24 @@
       "prettier"
   ],
   "rules": {
-    "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": [
       "error"
     ],
-     "import/extensions": [
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "prefix": ["I"],
+        "format": ["PascalCase"]
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "import/extensions": [
       "error",
       "ignorePackages",
       {
@@ -32,12 +45,7 @@
     "prettier/prettier": "error",
     "class-methods-use-this": "off",
     "camelcase":"off",
-    "@typescript-eslint/no-unused-vars": [
-      "warn",
-      {
-        "argsIgnorePattern": "^_"
-      }
-    ],
+    "no-use-before-define": "off",
     "no-console":"off"
   },
   "settings": {
