@@ -40,7 +40,10 @@ class AuthenticateUserService {
       expiresIn,
     });
 
-    return { user, token };
+    return {
+      user,
+      token,
+    };
   }
 }
 
